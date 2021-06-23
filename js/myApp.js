@@ -60,7 +60,7 @@ newGame.addEventListener('click', function () {
     main();
 });
 newRound.addEventListener('click', function () {
-
+ 
     cat.locX = 40;
     cat.locY = 200;
     dog.locX = 550;
