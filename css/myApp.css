@@ -1,0 +1,39 @@
+.gameArea-container {
+    width: 50%;
+    text-align: center;
+}
+
+.gameArea {
+    border: 1px solid black;
+}
+
+.game-btn-container {
+    width: 25%;
+    padding: 20px;
+}
+
+.game-btn-container-left {
+    text-align: end;
+
+}
+
+.game-btn {
+    width: 30%;
+    height: 50px;
+}
+
+.txt-progress {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.myProgress {
+    width: 100%;
+    background-color: grey;
+}
+
+.myBar {
+    width: 1%;
+    height: 30px;
+    background-color: green;
+}

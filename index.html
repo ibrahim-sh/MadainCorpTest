@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Exam Madain Corp">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Ibrahim">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/myApp.css">
+
+    <title>Cat VS Dog</title>
+
+</head>
+
+<body>
+
+    <div style="display: flex;">
+        <div class="game-btn-container game-btn-container-left">
+            <div style="margin-bottom: 50px;">
+                <button id="btn-newGame" class="game-btn">New Game</button>
+                <button id="btn-newRound" class="game-btn">New round</button>
+
+            </div>
+
+            <p class="txt-progress">Cat</p>
+            <div class="myProgress" id="progress-cat">
+                <div class="myBar" id="bar-cat"></div>
+            </div>
+        </div>
+
+        <div class="gameArea-container">
+            <canvas id="gameArea" class="gameArea" width="600" height="500"></canvas>
+        </div>
+        <div class="game-btn-container">
+            <button id="btn-roundDog" class="game-btn">dog round</button>
+            <button id="btn-roundCat" class="game-btn">cat round</button>
+            <div>
+                <p>please select who should start game then press on new game button </p>
+            </div>
+
+            <p class="txt-progress">Dog</p>
+            <div class="myProgress" id="progress-dog">
+                <div class="myBar" id="bar-dog"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="div-result" style="width: 100%; text-align: center;"></div>
+
+    <script src="js/myApp.js"></script>
+
+</body>
+
+</html>
