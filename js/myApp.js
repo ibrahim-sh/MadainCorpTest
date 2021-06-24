@@ -44,7 +44,6 @@ newGame.addEventListener('click', function () {
         alert('please select round cat or dog !');
         return;
     }
-   
 
     cat.locX = 40;
     cat.locY = 200;
@@ -56,11 +55,11 @@ newGame.addEventListener('click', function () {
     barCat.style.width = cat.health + '%';
     barDog.style.width = dog.health + '%';
     result.innerHTML = '';
-    // resultTxt = '';
     main();
+
 });
 newRound.addEventListener('click', function () {
- 
+
     cat.locX = 40;
     cat.locY = 200;
     dog.locX = 550;
@@ -68,7 +67,6 @@ newRound.addEventListener('click', function () {
     result.innerHTML = '';
     gameOver = false;
     main();
-
 
 });
 
@@ -108,22 +106,10 @@ function update() {
             dog.health = dog.health - cat.strength;
             barDog.style.width = dog.health + '%';
 
-            // if (dog.health <= 0) {
-            //     gameOver = true;
-            //     return;
-            // }
-
-
         } else if (round == 'dog') {
 
             cat.health = cat.health - dog.strength;
             barCat.style.width = cat.health + '%';
-
-
-            // if (cat.health <= 0) {
-            //     gameOver = true;
-            //     return;
-            // }
 
         }
 
